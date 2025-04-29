@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <main class="main">
+    <div    class="header">
+        <h1 class="helloUser"></h1>
+        
+    </div>
+    <h2>Bem-vindo ao Cationário!</h2>
+     
+    <h2> Questões</h2>
+    <div class="content">
+        <a class="contentInfo" href="/">Português</a>
+        <a class="contentInfo" href="/">Matemática</a>
+        <a class="contentInfo" href="/">História</a>
+        <a class="contentInfo" href="/">Geografia</a>
+        <a class="contentInfo" href="/">Inglês</a>
+        <a class="contentInfo" href="/">Biologia</a>
+        <a class="contentInfo" href="/">Física</a>
+        <a class="contentInfo" href="/">Química</a>
+    </div>
+    
+  
+
+  </main>
+  <script>
+    const userName =  document.getElementsByClassName('helloUser')[0];
+
+    user = 'Ruan Carlos';
+    if (user) {
+      userName.innerHTML = `Olá meu amigo ${user}`;
+    } else {
+      userName.innerHTML = "Olá, visitante!";
+    }        
+
+  </script>
+</body>
+</html>

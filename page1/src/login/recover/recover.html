@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recuperar Senha</title>
+  <link rel="stylesheet" href="recover.css" />
+</head>
+<body>
+  <div class="recover-container" id="recover">
+    <label for="email" class="gmail">Digite seu Email:</label>
+    <input 
+      type="email" 
+      class="email" 
+      id="emailInput"
+      required 
+    />
+    <button onclick="validated()" class="submit">Recuperar</button>
+
+    <p id="errorMessage" class="error-message"></p>
+    <p id="successMessage" class="success-message"></p>
+  </div>
+
+  <script>
+    function validated() {
+      const emailInput = document.getElementById('emailInput').value.trim();
+      const errorMsg = document.getElementById('errorMessage');
+      const successMsg = document.getElementById('successMessage');
+      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+
+      errorMsg.textContent = '';
+      successMsg.textContent = '';
+
+      if (!emailInput) {
+        alert("Digite um email válido");
+        return;
+      } else if (!emailRegex.test(emailInput)) {
+        alert("Email inválido");
+        return;
+      } else {
+        alert("Email enviado com Sucesso!");
+        successMsg.textContent = "Link de recuperação enviado para seu e-mail!";
+      }
+    }
+  </script>
+</body>
+</html>
