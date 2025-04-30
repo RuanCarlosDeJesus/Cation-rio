@@ -64,3 +64,6 @@ body {
     padding: 0;      /* tira espaço interno */
     border: 1px solid #fff; /* opcional, para visual separação */
 }
+.contentInfo:hover{
+    background-color: #977747;
+}

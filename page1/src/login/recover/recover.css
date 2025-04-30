@@ -1,45 +1,59 @@
+
+
 body {
-    width: 100%;
-    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #693f00, #463029);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+  }
+
+.recover-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .gmail {
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(to right,#FAC591, #361c02);
-   
-    
-}
-input {
-    margin: 5px;
-    height: 30px;
-    background: #f0d1b2;
-}
-    .recover-container {
-        width: 500px;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-        padding: 20px;
-        margin: 20px;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .gmail{
-        margin: 10px;
-        color: #fffefe;
-    }
-    .submit{
-        margin: 10px;
-        height: 35px;
-        width: 180px;
-        background-color: #814509;
-        cursor: pointer;
-        transition: ease-in-out 0.5s;
-        color: white;
-    }
-    .submit:hover{
-        background-color: #fffefe;
-    }
+  }
+  
+  .email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+  }
+  
+  .submit {
+    padding: 10px 20px;
+    background-color: #5D4037;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit:hover {
+    background-color: black;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 10px;
+  }
+  
